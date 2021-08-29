@@ -1,34 +1,35 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    backgroundColor: theme => ({
-      ...theme('colors'),
-      'primary': '#2E7EFA',
-     }) ,
+    backgroundColor: (theme) => ({
+      ...theme("colors"),
+      primary: "#2E7EFA",
+      "dark-blue": "#3210BE",
+      gray: "#E3E3E3",
+    }),
     borderWidth: {
-     '3': '3px',
+      3: "3px",
     },
- 
-    borderColor: theme => ({
-      ...theme('colors'),
-      'primary': '#2E7EFA',
-      'secondary': '#E94927',
-     }),
-     fontSize: {
-      'base': '1.5rem',
-      'heading':'5rem',
-      '5xl':'2rem'
-     },
+
+    borderColor: (theme) => ({
+      ...theme("colors"),
+      primary: "#2E7EFA",
+      secondary: "#E94927",
+    }),
+    fontSize: {
+      base: "1.5rem",
+      heading: "5rem",
+      "5xl": "2rem",
+    },
     extend: {
-      backgroundImage: theme => ({
-        'header1-image': "url( 'photos/header1.png')",
-        
-       })
+      backgroundImage: (theme) => ({
+        "header1-image": "url( 'photos/header1.png')",
+      }),
     },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};
