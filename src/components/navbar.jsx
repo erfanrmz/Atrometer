@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const NavBar = () => {
   // const itemLables = ["تماس با ما","راهکارها", "محصولات"]
@@ -17,7 +17,7 @@ const NavBar = () => {
         </li>
         <li>
           <a
-            className="h-12 text-white text-base flex-1 mx-4 float-right nav-item border-b-3 border-secondary"
+            className="h-12 text-white text-base flex-1 mx-4 float-right nav-item border-opacity-0 hover:border-opacity-100 border-b-3 border-secondary"
             href="/html/"
           >
             راهکارها
@@ -25,7 +25,7 @@ const NavBar = () => {
         </li>
         <li>
           <a
-            className="h-12 text-white text-base flex-1  pb-4 mx-4 float-right nav-item"
+            className="h-12 text-white text-base flex-1  pb-4 mx-4 float-right nav-item border-opacity-0 hover:border-opacity-100 border-b-3 border-secondary"
             href="/css/"
           >
             محصولات
@@ -33,7 +33,7 @@ const NavBar = () => {
         </li>
         <li>
           <a
-            className="h-12 text-white text-base flex-1 pb-4 mx-4 float-right nav-item"
+            className="h-12 text-white text-base flex-1 pb-4 mx-4 float-right nav-item border-opacity-0 hover:border-opacity-100 border-b-3 border-secondary"
             href="/js/"
           >
             تماس با ما
@@ -55,5 +55,5 @@ const NavBar = () => {
     </nav>
   );
 };
- 
+
 export default NavBar;
