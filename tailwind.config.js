@@ -17,6 +17,8 @@ module.exports = {
      }),
      fontSize: {
       'base': '1.5rem',
+      'heading':'5rem',
+      '5xl':'2rem'
      },
     extend: {
       backgroundImage: theme => ({
