@@ -4,7 +4,7 @@ const NavBar = () => {
   // const itemLables = ["تماس با ما","راهکارها", "محصولات"]
 
   return (
-    <nav className="w-full h-24  bg-blue-800  navbar relative ">
+    <nav className="w-full h-24  bg-dark-blue  navbar relative ">
       <ul className="bottom-0 absolute w-full max-h-12">
         <li>
           <a href="#" className="pb-4 mx-4 float-right nav-item">

@@ -5,7 +5,7 @@ module.exports = {
     backgroundColor: (theme) => ({
       ...theme("colors"),
       primary: "#2E7EFA",
-      "dark-blue": "#3210BE",
+      "dark-blue": "#3210BC",
       gray: "#E3E3E3",
     }),
     borderWidth: {
@@ -16,6 +16,11 @@ module.exports = {
       ...theme("colors"),
       primary: "#2E7EFA",
       secondary: "#E94927",
+    }),
+    textColor: (theme) => ({
+      ...theme("colors"),
+      primary: "#3210BE",
+      secondary: "#FFF8F8",
     }),
     fontSize: {
       base: "1.5rem",
