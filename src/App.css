@@ -54,11 +54,11 @@
 
 .header {
   @apply w-full bg-cover bg-no-repeat;
-  height: 54rem;
+  height:60rem;
   }
 
   .filter {
 
     @apply w-full bg-primary bg-opacity-75 mix-blend-hard-light;
-    height: 54rem;
+    height:60rem;
 }

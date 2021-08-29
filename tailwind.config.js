@@ -25,6 +25,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         "header1-image": "url( 'photos/header1.png')",
+        "header2-image": "url( 'photos/header2.jpg')",
       }),
     },
   },
