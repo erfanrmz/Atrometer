@@ -6,6 +6,7 @@ module.exports = {
       ...theme("colors"),
       primary: "#2E7EFA",
       "dark-blue": "#3210BC",
+      "orange":"#E94927",
       gray: "#E3E3E3",
     }),
     borderWidth: {

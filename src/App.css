@@ -44,17 +44,30 @@
 /* navBar */
 
 .navbar {
-  background-color: #3210bc;
+  @apply w-full h-24 bg-dark-blue relative;
   
 }
-.nav-item{
-  bottom:0%;
+.nav-items{
+  @apply w-full max-h-12 bottom-0  absolute;
+}
+.nav-item.float-left{
+  @apply h-12 text-white text-base flex  ml-28 border-opacity-0 hover:border-opacity-100 border-b-3 border-secondary ;
   
+}
+.nav-item.float-right{
+  @apply h-12 mx-4 text-white text-base border-b-3 border-secondary  border-opacity-0 hover:border-opacity-100 ;
+  
+}
+.nav-item-register{
+  @apply py-1 px-6 ml-28 float-left bg-white hover:bg-orange text-base text-primary hover:text-white rounded-2xl;
 }
 
+/* header */
+
 .header {
-  @apply w-full bg-cover bg-no-repeat ;
+  @apply w-full bg-header1-image  bg-cover bg-no-repeat ;
   height:60rem;
+
   }
 
   .filter {
@@ -63,6 +76,18 @@
     height:60rem;
 }
 
+.motto{
+  @apply  mt-36 mr-36 text-heading text-white font-extrabold;
+}
+.solutions{
+  @apply flex flex-col absolute left-52 top-64;
+}
+.solutions-item{
+  @apply font-extrabold z-auto bg-gray hover:bg-dark-blue  text-5xl rounded-full text-blue-700 text-base mb-6 w-64 h-24 duration-500;
+}
+.solutions-button{
+  @apply font-extrabold bg-white hover:bg-orange text-primary hover:text-white  text-5xl rounded-full  text-base mt-16 bottom-48 w-64 h-24 
+}
 
 .button-visible{
   @apply visible opacity-100 ; 

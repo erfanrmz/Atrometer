@@ -4,8 +4,8 @@ const NavBar = () => {
   // const itemLables = ["تماس با ما","راهکارها", "محصولات"]
 
   return (
-    <nav className="w-full h-24  bg-dark-blue  navbar relative ">
-      <ul className="bottom-0 absolute w-full max-h-12">
+    <nav className="navbar">
+      <ul className="nav-items">
         <li>
           <a href="#" className="pb-4 mx-4 float-right nav-item">
             <img
@@ -17,7 +17,7 @@ const NavBar = () => {
         </li>
         <li>
           <a
-            className="h-12 text-white text-base flex-1 mx-4 float-right nav-item border-opacity-0 hover:border-opacity-100 border-b-3 border-secondary"
+            className="nav-item float-right"
             href="/html/"
           >
             راهکارها
@@ -25,7 +25,7 @@ const NavBar = () => {
         </li>
         <li>
           <a
-            className="h-12 text-white text-base flex-1  pb-4 mx-4 float-right nav-item border-opacity-0 hover:border-opacity-100 border-b-3 border-secondary"
+            className="nav-item float-right"
             href="/css/"
           >
             محصولات
@@ -33,7 +33,7 @@ const NavBar = () => {
         </li>
         <li>
           <a
-            className="h-12 text-white text-base flex-1 pb-4 mx-4 float-right nav-item border-opacity-0 hover:border-opacity-100 border-b-3 border-secondary"
+            className="nav-item float-right"
             href="/js/"
           >
             تماس با ما
@@ -41,16 +41,17 @@ const NavBar = () => {
         </li>
         <li>
           <a
-            className="h-12 text-white text-base flex pb-4 mx-6 ml-24  float-left nav-item"
+            className="nav-item float-left"
             href="/css/"
           >
             ورود
           </a>
         </li>
-        {/* <a className="text-white  flex-1  mx-4 nav-item float-left bg-white rounded-3xl text-blue-700 p-6" href="/js/">ثبت نام</a>  */}
-        <button className="w-30 h-10 mx-4 ml-24 float-left bg-white rounded-2xl text-blue-700 text-base px-6 nav-item">
+        <li>
+          <a href="#" className="nav-item-register  ">
           ثبت نام
-        </button>
+        </a>
+        </li>
       </ul>
     </nav>
   );
