@@ -18,42 +18,44 @@ const Header = () => {
             <br /> راهکار هوشمندانه
           </p>
         </div>
-        <div className="solutions flex-1">
-          <div className={tooltipStyle}>
+        <div className="flex-1 relative">
+          <div className="solutions flex-1">
+            <div className={tooltipStyle}>
+              <button className={solutionsStyle}>
+                <img
+                  src={process.env.PUBLIC_URL + "/Atrometer.svg"}
+                  alt="آترومتر"
+                  className="m-auto"
+                />
+              </button>
+              <span class="tooltiptext">
+                قرائت از مرحله ی انتخاب قرایت سازمانی برق بر اساس استاندارد
+                IEC6205621 قابل اطلاعات قابل قرائت از کنتور های
+              </span>
+            </div>
             <button className={solutionsStyle}>
               <img
-                src={process.env.PUBLIC_URL + "/Atrometer.svg"}
-                alt="آترومتر"
-                className="m-auto"
+                src={process.env.PUBLIC_URL + "/navgon.png"}
+                alt="ناوگون"
+                className="m-auto w-4/5"
               />
             </button>
-            <span class="tooltiptext">
-              قرائت از مرحله ی انتخاب قرایت سازمانی برق بر اساس استاندارد
-              IEC6205621 قابل اطلاعات قابل قرائت از کنتور های
-            </span>
+            <button className={solutionsStyle}>
+              <img
+                src={process.env.PUBLIC_URL + "/Atrocell.svg"}
+                alt="آتروسل"
+                className="m-auto "
+              />
+            </button>
+            <button
+              className="solutions-button"
+              onClick={() => {
+                setSelect(!select);
+              }}
+            >
+              راهکارها
+            </button>
           </div>
-          <button className={solutionsStyle}>
-            <img
-              src={process.env.PUBLIC_URL + "/navgon.png"}
-              alt="ناوگون"
-              className="m-auto w-4/5"
-            />
-          </button>
-          <button className={solutionsStyle}>
-            <img
-              src={process.env.PUBLIC_URL + "/Atrocell.svg"}
-              alt="آتروسل"
-              className="m-auto "
-            />
-          </button>
-          <button
-            className="solutions-button"
-            onClick={() => {
-              setSelect(!select);
-            }}
-          >
-            راهکارها
-          </button>
         </div>
       </div>
     </div>
