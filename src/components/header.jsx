@@ -1,9 +1,34 @@
 import React, { Component, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaBars } from "react-icons/fa";
+import SolutionItem from "../commons/solutionItem";
 
 const Header = () => {
   const [select, setSelect] = useState(false);
+  const motto = "آتروان انتخاب  راهکار هوشمندانه";
+  const solutions = [
+    {
+      label: "آترومتر",
+      imageUrl: `${process.env.PUBLIC_URL + "/Atrometer.svg"}`,
+      tooltipText:
+        "قرائت از مرحله ی انتخاب قرایت سازمانی برق بر اساس استانداردIEC6205621 قابل اطلاعات قابل قرائت از کنتور های",
+      style: "",
+    },
+    {
+      label: "ناوگون",
+      imageUrl: `${process.env.PUBLIC_URL + "/navgon.png"}`,
+      tooltipText:
+        "قرائت از مرحله ی انتخاب قرایت سازمانی برق بر اساس استانداردIEC6205621 قابل اطلاعات قابل قرائت از کنتور های",
+      style: "w-4/5",
+    },
+    {
+      label: "آتروسل",
+      imageUrl: `${process.env.PUBLIC_URL + "/Atrocell.svg"}`,
+      tooltipText:
+        "قرائت از مرحله ی انتخاب قرایت سازمانی برق بر اساس استانداردIEC6205621 قابل اطلاعات قابل قرائت از کنتور های",
+      style: "",
+    },
+  ];
   let solutionsStyle = !select
     ? "solutions-item item-hidden"
     : "solutions-item item-visible";
@@ -11,6 +36,7 @@ const Header = () => {
   let backgroundChoice = !select
     ? "header bg-header1-image"
     : "header bg-header2-image";
+
   return (
     <div className={backgroundChoice}>
       <div className="filter flex">
@@ -23,33 +49,17 @@ const Header = () => {
         <div className="flex-1 relative">
           <FaBars className=" bars " />
           <div className="solutions flex-1">
-            <div className={tooltipStyle}>
-              <button className={solutionsStyle}>
-                <img
-                  src={process.env.PUBLIC_URL + "/Atrometer.svg"}
-                  alt="آترومتر"
-                  className="m-auto"
-                />
-              </button>
-              <span class="tooltiptext">
-                قرائت از مرحله ی انتخاب قرایت سازمانی برق بر اساس استاندارد
-                IEC6205621 قابل اطلاعات قابل قرائت از کنتور های
-              </span>
-            </div>
-            <button className={solutionsStyle}>
-              <img
-                src={process.env.PUBLIC_URL + "/navgon.png"}
-                alt="ناوگون"
-                className="m-auto w-4/5"
+            {solutions.map((solution) => (
+              <SolutionItem
+                label={solution.label}
+                imageUrl={solution.imageUrl}
+                tooltipText={solution.tooltipText}
+                tooltipStyle={tooltipStyle}
+                solutionsStyle={solutionsStyle}
+                imageStyle={solution.style}
               />
-            </button>
-            <button className={solutionsStyle}>
-              <img
-                src={process.env.PUBLIC_URL + "/Atrocell.svg"}
-                alt="آتروسل"
-                className="m-auto "
-              />
-            </button>
+            ))}
+
             <button
               className="solutions-button"
               onClick={() => {
