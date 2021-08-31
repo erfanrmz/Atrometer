@@ -1,4 +1,6 @@
 import React, { Component, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaBars } from "react-icons/fa";
 
 const Header = () => {
   const [select, setSelect] = useState(false);
@@ -13,6 +15,7 @@ const Header = () => {
     <div className={backgroundChoice}>
       <div className="filter flex">
         <div className="flex-1">
+          <FaBars />
           <p className="motto ">
             آتروان انتخاب
             <br /> راهکار هوشمندانه
