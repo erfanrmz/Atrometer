@@ -8,6 +8,7 @@ module.exports = {
       "dark-blue": "#3210BC",
       "orange":"#E94927",
       "gray-light": "#E3E3E3",
+      "tooltip-green":"#CDD500"
     }),
     borderWidth: {
       3: "3px",

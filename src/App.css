@@ -65,7 +65,7 @@
 /* header */
 
 .header {
-  @apply w-full bg-cover bg-no-repeat;
+  @apply w-full bg-cover bg-no-repeat duration-500;
   height:60rem;
 
   }
@@ -89,9 +89,35 @@
   @apply font-extrabold bg-white hover:bg-orange text-primary hover:text-white  text-5xl rounded-full  text-base mt-16 bottom-48 w-64 h-24 
 }
 
-.button-visible{
+.item-visible {
   @apply visible opacity-100 ; 
 }
-.button-hidden{
-  @apply invisible opacity-0 overflow-hidden transition-all duration-500;
+.item-hidden {
+  @apply invisible opacity-0 overflow-hidden duration-500;
+}
+
+.tooltip {
+  @apply relative inline-block;
+}
+
+.tooltip .tooltiptext {
+  @apply text-base font-normal p-4 invisible bg-tooltip-green text-primary text-right rounded-md absolute z-10 -top-8;
+
+  width: 26.625rem;
+  left: 107%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 16px;
+  border-style: solid;
+  border-color: transparent #CDD500 transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
