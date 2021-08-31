@@ -65,7 +65,7 @@
 /* header */
 
 .header {
-  @apply w-full bg-header1-image  bg-cover bg-no-repeat ;
+  @apply w-full bg-cover bg-no-repeat;
   height:60rem;
 
   }
@@ -83,7 +83,7 @@
   @apply flex flex-col absolute left-52 top-64;
 }
 .solutions-item{
-  @apply font-extrabold z-auto bg-gray hover:bg-dark-blue  text-5xl rounded-full text-blue-700 text-base mb-6 w-64 h-24 duration-500;
+  @apply font-extrabold z-auto bg-gray-300 hover:bg-dark-blue text-5xl rounded-full text-blue-700 text-base mb-6 w-64 h-24 duration-500;
 }
 .solutions-button{
   @apply font-extrabold bg-white hover:bg-orange text-primary hover:text-white  text-5xl rounded-full  text-base mt-16 bottom-48 w-64 h-24 

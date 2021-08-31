@@ -3,8 +3,11 @@ import React, { Component, useState } from "react";
 const Header = () => {
   const [select, setSelect] = useState(false);
   let solutionsStyle = !select ? "solutions-item button-hidden" : "solutions-item button-visible";
+  let backgroundChoice = !select
+    ? "header bg-header1-image"
+    : "header bg-header2-image";
   return (
-    <div className="header">
+    <div className={backgroundChoice}>
       <div className="filter flex">
         <div className="flex-1">
           <p className="motto ">
@@ -34,11 +37,15 @@ const Header = () => {
               className="m-auto "
             />
           </button>
-          <button className="solutions-button" onClick={() => setSelect(true)}>
+          <button
+            className="solutions-button"
+            onClick={() => {
+              setSelect(!select);
+            }}
+          >
             راهکارها
           </button>
         </div>
-        
       </div>
     </div>
   );
