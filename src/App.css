@@ -116,3 +116,8 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.bars {
+
+  @apply float-left ml-24 mt-16 w-14 h-7;
+}

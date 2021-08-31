@@ -1,4 +1,6 @@
 import React, { Component, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaBars } from "react-icons/fa";
 
 const Header = () => {
   const [select, setSelect] = useState(false);
@@ -19,6 +21,7 @@ const Header = () => {
           </p>
         </div>
         <div className="flex-1 relative">
+          <FaBars className=" bars " />
           <div className="solutions flex-1">
             <div className={tooltipStyle}>
               <button className={solutionsStyle}>
