@@ -1,7 +1,33 @@
 import React from "react";
-
+import NavItem from "../commons/navItem";
 const NavBar = () => {
-  // const itemLables = ["تماس با ما","راهکارها", "محصولات"]
+  const itemLables = [
+    {
+      label: "راهکارها",
+      endPoint: "/solutions",
+      classes: "nav-item float-right",
+    },
+    {
+      label: "محصولات",
+      endPoint: "/products",
+      classes: "nav-item float-right",
+    },
+    {
+      label: "تماس با ما",
+      endPoint: "/contact",
+      classes: "nav-item float-right",
+    },
+    {
+      label: "ورود",
+      endPoint: "/login",
+      classes: "nav-item float-left",
+    },
+    {
+      label: "ثبت نام",
+      endPoint: "/register",
+      classes: "nav-item-register",
+    },
+  ];
 
   return (
     <nav className="navbar">
@@ -15,43 +41,13 @@ const NavBar = () => {
             />
           </a>
         </li>
-        <li>
-          <a
-            className="nav-item float-right"
-            href="/html/"
-          >
-            راهکارها
-          </a>
-        </li>
-        <li>
-          <a
-            className="nav-item float-right"
-            href="/css/"
-          >
-            محصولات
-          </a>
-        </li>
-        <li>
-          <a
-            className="nav-item float-right"
-            href="/js/"
-          >
-            تماس با ما
-          </a>
-        </li>
-        <li>
-          <a
-            className="nav-item float-left"
-            href="/css/"
-          >
-            ورود
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-item-register  ">
-          ثبت نام
-        </a>
-        </li>
+        {itemLables.map((item) => (
+          <NavItem
+            label={item.label}
+            endpoint={item.endPoint}
+            classes={item.classes}
+          />
+        ))}
       </ul>
     </nav>
   );
