@@ -1,6 +1,7 @@
 import React, { Component, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaBars } from "react-icons/fa";
+import { IoIosArrowDropdownCircle } from "react-icons/io";
 import SolutionItem from "../commons/solutionItem";
 
 const Header = () => {
@@ -46,6 +47,12 @@ const Header = () => {
             <br /> راهکار هوشمندانه
           </p>
         </div>
+        <div className="relative">
+          <a href="/products">
+            <IoIosArrowDropdownCircle className="absolute bottom-10 w-14 h-14  font-primary" />
+          </a>
+        </div>
+
         <div className="flex-1 relative">
           <FaBars className=" bars " />
           <div className="solutions flex-1">
