@@ -45,20 +45,17 @@
 
 .navbar {
   @apply w-full h-24 bg-dark-blue relative;
-  
 }
-.nav-items{
+.nav-items {
   @apply w-full max-h-12 bottom-0  absolute;
 }
-.nav-item.float-left{
-  @apply h-12 text-white text-base flex  ml-28 border-opacity-0 hover:border-opacity-100 border-b-3 border-secondary ;
-  
+.nav-item.float-left {
+  @apply h-12 text-white text-base flex  ml-28 border-opacity-0 hover:border-opacity-100 border-b-3 border-secondary;
 }
-.nav-item.float-right{
-  @apply h-12 mx-4 text-white text-base border-b-3 border-secondary  border-opacity-0 hover:border-opacity-100 ;
-  
+.nav-item.float-right {
+  @apply h-12 mx-4 text-white text-base border-b-3 border-secondary  border-opacity-0 hover:border-opacity-100;
 }
-.nav-item-register{
+.nav-item-register {
   @apply py-1 px-6 ml-28 float-left bg-white hover:bg-orange text-base text-primary hover:text-white rounded-2xl;
 }
 
@@ -66,31 +63,29 @@
 
 .header {
   @apply w-full bg-cover bg-no-repeat duration-500;
-  height:60rem;
-
-  }
-
-  .filter {
-    
-    @apply w-full bg-primary bg-opacity-75 mix-blend-hard-light ; 
-    height:60rem;
+  height: 60rem;
 }
 
-.motto{
-  @apply  mt-36 mr-36 text-heading text-white font-extrabold;
+.filter {
+  @apply w-full bg-primary bg-opacity-75 mix-blend-hard-light;
+  height: 60rem;
 }
-.solutions{
+
+.motto {
+  @apply mt-36 mr-36 text-heading text-white font-extrabold;
+}
+.solutions {
   @apply flex flex-col absolute left-52 top-64;
 }
-.solutions-item{
+.solutions-item {
   @apply font-extrabold z-auto bg-gray-300 hover:bg-dark-blue text-5xl rounded-full text-blue-700 text-base mb-6 w-64 h-24 duration-500;
 }
-.solutions-button{
-  @apply font-extrabold bg-white hover:bg-orange text-primary hover:text-white  text-5xl rounded-full  text-base mt-16 bottom-48 w-64 h-24 
+.solutions-button {
+  @apply font-extrabold bg-white hover:bg-orange text-primary hover:text-white  text-5xl rounded-full  text-base mt-16 bottom-48 w-64 h-24;
 }
 
 .item-visible {
-  @apply visible opacity-100 ; 
+  @apply visible opacity-100;
 }
 .item-hidden {
   @apply invisible opacity-0 overflow-hidden duration-500;
@@ -108,14 +103,14 @@
 }
 
 .tooltip .tooltiptext::after {
+  @apply absolute top-1/2 right-full border-solid;
+
   content: "";
-  position: absolute;
-  top: 50%;
-  right: 100%;
+
   margin-top: -5px;
   border-width: 16px;
-  border-style: solid;
-  border-color: transparent #CDD500 transparent transparent;
+
+  border-color: transparent #cdd500 transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {

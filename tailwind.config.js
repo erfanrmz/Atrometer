@@ -6,9 +6,9 @@ module.exports = {
       ...theme("colors"),
       primary: "#2E7EFA",
       "dark-blue": "#3210BC",
-      "orange":"#E94927",
+      orange: "#E94927",
       "gray-light": "#E3E3E3",
-      "tooltip-green":"#CDD500"
+      "tooltip-green": "#CDD500",
     }),
     borderWidth: {
       3: "3px",
@@ -18,6 +18,7 @@ module.exports = {
       ...theme("colors"),
       primary: "#2E7EFA",
       secondary: "#E94927",
+      "tooltip-green": "#CDD500",
     }),
     textColor: (theme) => ({
       ...theme("colors"),
