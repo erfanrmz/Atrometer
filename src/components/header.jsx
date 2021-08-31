@@ -15,13 +15,13 @@ const Header = () => {
     <div className={backgroundChoice}>
       <div className="filter flex">
         <div className="flex-1">
-          <FaBars />
           <p className="motto ">
             آتروان انتخاب
             <br /> راهکار هوشمندانه
           </p>
         </div>
         <div className="flex-1 relative">
+          <FaBars className=" bars " />
           <div className="solutions flex-1">
             <div className={tooltipStyle}>
               <button className={solutionsStyle}>
