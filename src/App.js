@@ -6,8 +6,8 @@ import OrgDimensions from "./pages/orgDimensions";
 
 function App() {
   return (
-    <Solutions />
-    // <OrgDimensions />
+    // <Solutions />
+    <OrgDimensions />
   );
 }
 
