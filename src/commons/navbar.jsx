@@ -1,6 +1,8 @@
 import React from "react";
-import NavItem from "../commons/navItem";
-const NavBar = () => {
+import NavItem from "./navItem";
+
+const NavBar = (props) => {
+  const navClass = "navbar bg-" + props.color;
   const itemLables = [
     {
       label: "راهکارها",
@@ -30,7 +32,7 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="navbar">
+    <nav className={navClass}>
       <ul className="nav-items">
         <li>
           <a href="#" className="pb-4 mx-4 float-right nav-item">

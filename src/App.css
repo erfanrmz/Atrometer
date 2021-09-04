@@ -44,7 +44,7 @@
 /* navBar */
 
 .navbar {
-  @apply w-full h-24 bg-dark-blue relative;
+  @apply w-full h-24 relative;
 }
 .nav-items {
   @apply w-full max-h-12 bottom-0  absolute;

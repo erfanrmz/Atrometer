@@ -6,7 +6,7 @@ module.exports = {
       ...theme("colors"),
       primary: "#2E7EFA",
       "dark-blue": "#3210BC",
-      orange: "#E94927",
+      orange:'#EF4D1E',
       "gray-light": "#E3E3E3",
       "tooltip-green": "#CDD500",
     }),
@@ -24,11 +24,13 @@ module.exports = {
       ...theme("colors"),
       primary: "#3210BE",
       secondary: "#FFF8F8",
+      orange:'#EF4D1E',
     }),
     fontSize: {
       base: "1.5rem",
       heading: "5rem",
       "5xl": "2rem",
+      "xl":"3.1875rem"
     },
     extend: {
       backgroundImage: (theme) => ({

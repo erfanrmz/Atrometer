@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import NavBar from "../components/navbar";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import NavBar from "../commons/navbar";
+import Header from "../solutions/header";
+import Footer from "../solutions/footer";
 
 const Solutions = () => {
   return (
     <React.Fragment>
-      <NavBar />
+      <NavBar color="dark-blue" />
       <Header />
       <Footer />
     </React.Fragment>
