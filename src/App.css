@@ -141,3 +141,32 @@ ul.breadcrumb li a:hover {
   color: #595959;
   text-decoration: underline;
 }
+/*carousel*/
+ul.carousel {
+  @apply mr-28 my-4;
+  display: flex;
+  flex-wrap: wrap;
+}
+ul.carousel li {
+  @apply my-4;
+}
+
+/* card */
+.card {
+  @apply bg-cover bg-bottom h-96 w-96 rounded-3xl bg-center ml-20;
+}
+.card-filter {
+  @apply bg-gradient-to-b h-96 w-96 rounded-3xl relative;
+}
+.card-body {
+  @apply flex flex-col m-auto;
+}
+.card-body img {
+  @apply w-12 h-12 flex-1 mx-auto mt-12;
+}
+.card-body p {
+  @apply text-white flex-1 mt-1  text-center;
+}
+.card-body button {
+  @apply bg-dark-red hover:bg-red-800  rounded-3xl w-36 h-12 py-1 px-6 text-base text-white mt-16 flex-1 m-auto;
+}

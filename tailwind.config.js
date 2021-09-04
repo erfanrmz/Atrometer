@@ -35,14 +35,20 @@ module.exports = {
     },
     gradientColorStops: (theme) => ({
       ...theme("colors"),
-      "green-apartment-fade": "#E4F5F0",
+      "green-apartment-fade": "rgba(228, 245, 240, 0.53)",
       "green-apartment": "#00D896",
+      "blue-tower": "rgba(46, 126, 250, 0.89)",
+      "blue-tower-fade": "rgba(228, 245, 240, 0.47)",
+      "red-complex": "rgba(127, 2, 47, 0.64)",
+      "red-complex-fade": "rgba(239, 232, 241, 0.64)",
     }),
     extend: {
       backgroundImage: (theme) => ({
         "header1-image": "url( 'photos/header1.png')",
         "header2-image": "url( 'photos/header2.jpg')",
         "apartment-image": "url('photos/apartment.png')",
+        "tower-image": "url('photos/tower.png')",
+        "complex-image": "url('photos/complex.png')",
       }),
     },
   },
