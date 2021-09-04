@@ -9,9 +9,9 @@ const Header = () => {
           <img
             src={process.env.PUBLIC_URL + "/atrometerLogo.svg"}
             alt=""
-            className="m-auto "
+            className="m-auto mr-28 "
           />
-          <p className="font-extrabold text-xl text-center ">
+          <p className="font-extrabold text-xl  mr-28 ">
             سامانه هوشمند قرائت <span className="text-orange">آب،برق،گاز</span>
           </p>
         </div>

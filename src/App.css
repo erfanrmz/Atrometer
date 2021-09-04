@@ -118,6 +118,26 @@
 }
 
 .bars {
-
   @apply float-left ml-24 mt-16 w-14 h-7;
+}
+
+ul.breadcrumb {
+  list-style: none;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 30px;
+}
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: ">";
+}
+ul.breadcrumb li a {
+  color: #b1b1b1;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #595959;
+  text-decoration: underline;
 }
