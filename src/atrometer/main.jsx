@@ -1,5 +1,33 @@
-import React, { Component } from "react";
+import React, { useEffect, useState, useRef } from "react";
+
+const colors = ["#0088FE", "#00C49F", "#FFBB28"];
+const delay = 2500;
+
 const Main = () => {
+  const [index, setIndex] = useState(0);
+  const timeoutRef = useRef(null);
+
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
+
+  useEffect(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+        ),
+      delay
+    );
+
+    return () => {
+      resetTimeout();
+    };
+  }, [index]);
+
   return (
     <React.Fragment>
       <nav className="mr-28">
@@ -16,72 +44,32 @@ const Main = () => {
       <p className="font-extrabold mr-28 text-xl mt-4">
         مرحله انتخاب ابعاد سازمانی
       </p>
-      <ul className="carousel">
-        <li>
-          <div className="card bg-apartment-image">
-            <div className="card-filter from-green-apartment to-green-apartment-fade">
-              <div className="card-body">
-                <img
-                  src={process.env.PUBLIC_URL + "/apartment-icon.svg"}
-                  alt="apartment-icon"
-                />
-                <p className="font-extrabold text-xl">آپارتمان</p>
-                <p className="font-light text-5xl">10 روز رایگان</p>
+      <div className="slideshow">
+        <div
+          className="slideshowSlider"
+          style={{ transform: `translate3d(${index * 100}%, 0, 0)` }}
+        >
+          {colors.map((backgroundColor, index) => (
+            <div
+              className="slide"
+              key={index}
+              style={{ backgroundColor }}
+            ></div>
+          ))}
+        </div>
 
-                <button>انتخاب</button>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="card bg-tower-image">
-            <div className="card-filter from-blue-tower to-blue-tower-fade">
-              <div className="card-body">
-                <img
-                  src={process.env.PUBLIC_URL + "/apartment-icon.svg"}
-                  alt="apartment-icon"
-                />
-                <p className="font-extrabold text-xl">برج</p>
-                <p className="font-light text-5xl">200 هزار تومان</p>
-
-                <button>انتخاب</button>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="card bg-complex-image">
-            <div className="card-filter from-red-complex to-red-complex-fade">
-              <div className="card-body">
-                <img
-                  src={process.env.PUBLIC_URL + "/apartment-icon.svg"}
-                  alt="apartment-icon"
-                />
-                <p className="font-extrabold text-xl">مجتمع</p>
-                <p className="font-light text-5xl">10 روز رایگان</p>
-
-                <button>انتخاب</button>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="card bg-town-image">
-            <div className="card-filter from-blue-town to-blue-town-fade">
-              <div className="card-body">
-                <img
-                  src={process.env.PUBLIC_URL + "/apartment-icon.svg"}
-                  alt="apartment-icon"
-                />
-                <p className="font-extrabold text-xl">شهرک</p>
-                <p className="font-light text-5xl">10 روز رایگان</p>
-
-                <button>انتخاب</button>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
+        <div className="slideshowDots">
+          {colors.map((_, idx) => (
+            <div
+              key={idx}
+              className={`slideshowDot${index === idx ? " active" : ""}`}
+              onClick={() => {
+                setIndex(idx);
+              }}
+            ></div>
+          ))}
+        </div>
+      </div>
     </React.Fragment>
   );
 };
