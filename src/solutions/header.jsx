@@ -33,9 +33,7 @@ const Header = () => {
   let solutionsStyle = !select
     ? "solutions-item item-hidden"
     : "solutions-item item-visible";
-  let tooltipStyle = !select
-    ? "tooltip-solutions item-hidden"
-    : "tooltip-solutions item-visible";
+  let tooltipStyle = !select ? "tooltip item-hidden" : "tooltip item-visible";
   let backgroundChoice = !select
     ? "header bg-header1-image"
     : "header bg-header2-image";
@@ -63,6 +61,7 @@ const Header = () => {
                 label={solution.label}
                 imageUrl={solution.imageUrl}
                 tooltipText={solution.tooltipText}
+                tooltipTextStyle="tooltiptext bg-tooltip-green text-primary -top-8 solutions-after"
                 tooltipStyle={tooltipStyle}
                 solutionsStyle={solutionsStyle}
                 imageStyle={solution.style}

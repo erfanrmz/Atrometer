@@ -121,9 +121,9 @@ const Main = () => {
         >
           {carouselItems.map((card, index) => (
             <Tooltip
-              tooltipStyle="tooltip-carousel visible"
-              tooltipTextStyle="tooltiptext-carousel"
-              tooltipText="tooltiptext-carousel"
+              tooltipStyle="tooltip  visible"
+              tooltipTextStyle="tooltiptext bg-tooltip-gray text-tooltip-carousel -bottom-96 right-1/3 carousel-after"
+              tooltipText="salam khubi"
             >
               <CarouselCard
                 title={card.title}
