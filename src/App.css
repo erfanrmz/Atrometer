@@ -175,6 +175,7 @@ ul.carousel li {
 .slideshow {
   /* margin: auto; */
   overflow: hidden;
+  margin-right: 80px;
   /* max-width: 500px; */
 }
 
