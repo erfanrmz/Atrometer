@@ -1,13 +1,13 @@
 import React, { useEffect, useState, useRef } from "react";
 import CarouselCard from "../commons/carouselCard";
 
-const colors = ["#0088FE", "#00C49F", "#FFBB28"];
+const divideScale = 3;
 const delay = 2500;
+const itemsPerSlide = 4;
 
 const Main = () => {
   const [index, setIndex] = useState(0);
   const timeoutRef = useRef(null);
-
   const carouselItems = [
     {
       title: "آپارتمان",
@@ -38,7 +38,7 @@ const Main = () => {
       caption: "10 روز رایگان",
       image: "town-image",
       icon: "apartment-icon.svg",
-      color: "blue-town ",
+      color: "blue-town",
     },
     {
       title: "آپارتمان",
@@ -69,8 +69,12 @@ const Main = () => {
       caption: "10 روز رایگان",
       image: "town-image",
       icon: "apartment-icon.svg",
-      color: "blue-town ",
+      color: "blue-town",
     },
+  ];
+
+  const pageCount = [
+    ...Array(Math.ceil(carouselItems.length / divideScale)).keys(),
   ];
 
   function resetTimeout() {
@@ -84,7 +88,7 @@ const Main = () => {
     timeoutRef.current = setTimeout(
       () =>
         setIndex((prevIndex) =>
-          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+          prevIndex === pageCount.length - 1 ? 0 : prevIndex + 1
         ),
       delay
     );
@@ -117,19 +121,19 @@ const Main = () => {
         >
           {carouselItems.map((card, index) => (
             <CarouselCard
-              className="slide"
               title={card.title}
               caption={card.caption}
               image={card.image}
               icon={card.icon}
               color={card.color}
+              scale={itemsPerSlide}
               key={index}
             />
           ))}
         </div>
 
         <div className="slideshowDots">
-          {carouselItems.map((_, idx) => (
+          {pageCount.map((_, idx) => (
             <div
               key={idx}
               className={`slideshowDot${index === idx ? " active" : ""}`}
