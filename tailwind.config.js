@@ -41,6 +41,8 @@ module.exports = {
       "blue-tower-fade": "rgba(228, 245, 240, 0.47)",
       "red-complex": "rgba(127, 2, 47, 0.64)",
       "red-complex-fade": "rgba(239, 232, 241, 0.64)",
+      "blue-town":"#2582C0",
+      "blue-town-fade":"rgba(161, 213, 229, 0.66)",
     }),
     extend: {
       backgroundImage: (theme) => ({
@@ -49,6 +51,7 @@ module.exports = {
         "apartment-image": "url('photos/apartment.png')",
         "tower-image": "url('photos/tower.png')",
         "complex-image": "url('photos/complex.png')",
+        "town-image": "url('photos/town.svg')",
       }),
     },
   },

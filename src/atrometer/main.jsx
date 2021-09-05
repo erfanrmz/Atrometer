@@ -65,6 +65,22 @@ const Main = () => {
             </div>
           </div>
         </li>
+        <li>
+          <div className="card bg-town-image">
+            <div className="card-filter from-blue-town to-blue-town-fade">
+              <div className="card-body">
+                <img
+                  src={process.env.PUBLIC_URL + "/apartment-icon.svg"}
+                  alt="apartment-icon"
+                />
+                <p className="font-extrabold text-xl">شهرک</p>
+                <p className="font-light text-5xl">10 روز رایگان</p>
+
+                <button>انتخاب</button>
+              </div>
+            </div>
+          </div>
+        </li>
       </ul>
     </React.Fragment>
   );
