@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import CarouselCard from "../commons/carouselCard";
-
+import Tooltip from "../commons/tooltip";
 const divideScale = 3;
-const delay = 2500;
+const delay = 100000;
 const itemsPerSlide = 4;
 
 const Main = () => {
@@ -120,15 +120,21 @@ const Main = () => {
           style={{ transform: `translate3d(${index * 100}%, 0, 0)` }}
         >
           {carouselItems.map((card, index) => (
-            <CarouselCard
-              title={card.title}
-              caption={card.caption}
-              image={card.image}
-              icon={card.icon}
-              color={card.color}
-              scale={itemsPerSlide}
-              key={index}
-            />
+            <Tooltip
+              tooltipStyle="tooltip-carousel visible"
+              tooltipTextStyle="tooltiptext-carousel"
+              tooltipText="tooltiptext-carousel"
+            >
+              <CarouselCard
+                title={card.title}
+                caption={card.caption}
+                image={card.image}
+                icon={card.icon}
+                color={card.color}
+                scale={itemsPerSlide}
+                key={index}
+              />
+            </Tooltip>
           ))}
         </div>
 

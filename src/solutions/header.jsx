@@ -33,7 +33,9 @@ const Header = () => {
   let solutionsStyle = !select
     ? "solutions-item item-hidden"
     : "solutions-item item-visible";
-  let tooltipStyle = !select ? "tooltip item-hidden" : "tooltip item-visible";
+  let tooltipStyle = !select
+    ? "tooltip-solutions item-hidden"
+    : "tooltip-solutions item-visible";
   let backgroundChoice = !select
     ? "header bg-header1-image"
     : "header bg-header2-image";

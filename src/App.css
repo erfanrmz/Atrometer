@@ -90,19 +90,16 @@
 .item-hidden {
   @apply invisible opacity-0 overflow-hidden duration-500;
 }
+/* tooltip of solutions */
 
-.tooltip {
-  @apply relative inline-block;
-}
-
-.tooltip .tooltiptext {
+.tooltip-solutions .tooltiptext-solutions {
   @apply text-base font-normal p-4 invisible bg-tooltip-green text-primary text-right rounded-md absolute z-10 -top-8;
 
   width: 26.625rem;
   left: 107%;
 }
 
-.tooltip .tooltiptext::after {
+.tooltip-solutions .tooltiptext-solutions::after {
   @apply absolute top-1/2 right-full border-solid;
 
   content: "";
@@ -113,7 +110,36 @@
   border-color: transparent #cdd500 transparent transparent;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip-solutions:hover .tooltiptext-solutions {
+  visibility: visible;
+}
+
+/* tooltip of carousel Cards */
+
+.tooltip-carousel {
+  @apply relative inline;
+}
+
+.tooltip-carousel .tooltiptext-carousel {
+  @apply text-base font-normal p-4 invisible bg-tooltip-gray text-tooltip-carousel text-right rounded-md absolute z-10 -bottom-96 right-1/3;
+
+  width: 26.625rem;
+  left: 107%;
+}
+
+.tooltip-carousel .tooltiptext-carousel::after {
+  @apply absolute top-1/2  border-solid;
+
+  content: "";
+  right: 10%;
+  transform: rotate(90deg);
+  margin-top: -15%;
+  border-width: 16px;
+
+  border-color: transparent #e5e5e5 transparent transparent;
+}
+
+.tooltip-carousel:hover .tooltiptext-carousel {
   visibility: visible;
 }
 
@@ -176,6 +202,7 @@ ul.carousel li {
   /* margin: auto; */
   overflow: hidden;
   margin-right: 80px;
+  padding-bottom: 100px;
   /* max-width: 500px; */
 }
 

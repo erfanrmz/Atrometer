@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Tooltip from "../commons/tooltip";
 const SolutionItem = ({
   label,
   imageUrl,
@@ -9,12 +9,11 @@ const SolutionItem = ({
   imageStyle,
 }) => {
   return (
-    <div className={tooltipStyle}>
+    <Tooltip tooltipText={tooltipText} tooltipStyle={tooltipStyle}>
       <button className={solutionsStyle}>
         <img src={imageUrl} alt={label} className={"m-auto " + imageStyle} />
       </button>
-      <span class="tooltiptext">{tooltipText}</span>
-    </div>
+    </Tooltip>
   );
 };
 

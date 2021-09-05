@@ -9,6 +9,8 @@ module.exports = {
       orange: "#EF4D1E",
       "gray-light": "#E3E3E3",
       "tooltip-green": "#CDD500",
+      "tooltip-gray": "#E5E5E5",
+
       "dark-red": "#B02D53",
     }),
     borderWidth: {
@@ -19,13 +21,13 @@ module.exports = {
       ...theme("colors"),
       primary: "#2E7EFA",
       secondary: "#E94927",
-      "tooltip-green": "#CDD500",
     }),
     textColor: (theme) => ({
       ...theme("colors"),
       primary: "#3210BE",
       secondary: "#FFF8F8",
       orange: "#EF4D1E",
+      "tooltip-carousel": "rgba(0, 0, 0, 0.6)",
     }),
     fontSize: {
       base: "1.5rem",
@@ -41,8 +43,8 @@ module.exports = {
       "blue-tower-fade": "rgba(228, 245, 240, 0.47)",
       "red-complex": "rgba(127, 2, 47, 0.64)",
       "red-complex-fade": "rgba(239, 232, 241, 0.64)",
-      "blue-town":"#2582C0",
-      "blue-town-fade":"rgba(161, 213, 229, 0.66)",
+      "blue-town": "#2582C0",
+      "blue-town-fade": "rgba(161, 213, 229, 0.66)",
     }),
     extend: {
       backgroundImage: (theme) => ({
