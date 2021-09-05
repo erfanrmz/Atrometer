@@ -10,6 +10,7 @@ module.exports = {
       "gray-light": "#E3E3E3",
       "tooltip-green": "#CDD500",
       "tooltip-gray": "#E5E5E5",
+      "light-green": "#00D896",
 
       "dark-red": "#B02D53",
     }),

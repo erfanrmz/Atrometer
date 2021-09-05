@@ -123,7 +123,27 @@ const Main = () => {
             <Tooltip
               tooltipStyle="tooltip  visible"
               tooltipTextStyle="tooltiptext bg-tooltip-gray text-tooltip-carousel -bottom-96 right-1/3 carousel-after"
-              tooltipText="salam khubi"
+              tooltipText={
+                <div>
+                  <div className="flex">
+                    <div className="flex-1">
+                      <p>
+                        10 روز انتخاب این گزینه رایگان
+                        <br /> است انتخاب آپارتمان به مدت
+                      </p>
+                    </div>
+                    <div className="flex-1">
+                      <img
+                        src={process.env.PUBLIC_URL + "/apartment.png"}
+                        className="w-24 h-24 float-left"
+                      />
+                    </div>
+                  </div>
+                  <button className="text-base text-white float-left bg-light-green rounded-3xl w-36 h-12 py-1 px-6">
+                    ادامه
+                  </button>
+                </div>
+              }
             >
               <CarouselCard
                 title={card.title}

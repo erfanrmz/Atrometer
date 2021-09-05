@@ -98,7 +98,8 @@
 
 .tooltip .tooltiptext {
   @apply text-base font-normal p-4 invisible  text-right rounded-md absolute z-10;
-  width: 26.625rem;
+  /* width: 26.625rem; */
+  width: 40rem;
   left: 107%;
 }
 
@@ -186,7 +187,7 @@ ul.carousel li {
   /* margin: auto; */
   overflow: hidden;
   margin-right: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 500px;
   /* max-width: 500px; */
 }
 
