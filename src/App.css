@@ -156,7 +156,7 @@ ul.carousel li {
   @apply bg-cover bg-bottom h-96 w-96 rounded-3xl bg-center ml-20;
 }
 .card-filter {
-  @apply bg-gradient-to-b h-96 w-96 rounded-3xl relative;
+  @apply bg-gradient-to-b h-full w-full rounded-3xl relative;
 }
 .card-body {
   @apply flex flex-col m-auto;
@@ -173,21 +173,22 @@ ul.carousel li {
 /* Slideshow */
 
 .slideshow {
-  margin: 0 auto;
+  /* margin: auto; */
   overflow: hidden;
-  max-width: 500px;
+  /* max-width: 500px; */
 }
 
 .slideshowSlider {
   white-space: nowrap;
   transition: ease 1000ms;
+  margin-top: 6.25rem;
 }
 
 .slide {
   display: inline-block;
 
-  height: 400px;
-  width: 100%;
+  /* height: 400px; */
+  /* width: 100%; */
   border-radius: 40px;
 }
 

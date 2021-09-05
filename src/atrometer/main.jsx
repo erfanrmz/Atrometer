@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import CarouselCard from "../commons/carouselCard";
 
 const colors = ["#0088FE", "#00C49F", "#FFBB28"];
 const delay = 2500;
@@ -6,6 +7,71 @@ const delay = 2500;
 const Main = () => {
   const [index, setIndex] = useState(0);
   const timeoutRef = useRef(null);
+
+  const carouselItems = [
+    {
+      title: "آپارتمان",
+      caption: "10 روز رایگان",
+      image: "apartment-image",
+      icon: "apartment-icon.svg",
+      color: "green-apartment",
+    },
+
+    {
+      title: "برج",
+      caption: "200 هزار تومان",
+      image: "tower-image",
+      icon: "apartment-icon.svg",
+      color: "blue-tower",
+    },
+
+    {
+      title: "مجتمع",
+      caption: "10 روز رایگان",
+      image: "complex-image",
+      icon: "apartment-icon.svg",
+      color: "red-complex ",
+    },
+
+    {
+      title: "شهرک",
+      caption: "10 روز رایگان",
+      image: "town-image",
+      icon: "apartment-icon.svg",
+      color: "blue-town ",
+    },
+    {
+      title: "آپارتمان",
+      caption: "10 روز رایگان",
+      image: "apartment-image",
+      icon: "apartment-icon.svg",
+      color: "green-apartment",
+    },
+
+    {
+      title: "برج",
+      caption: "200 هزار تومان",
+      image: "tower-image",
+      icon: "apartment-icon.svg",
+      color: "blue-tower",
+    },
+
+    {
+      title: "مجتمع",
+      caption: "10 روز رایگان",
+      image: "complex-image",
+      icon: "apartment-icon.svg",
+      color: "red-complex ",
+    },
+
+    {
+      title: "شهرک",
+      caption: "10 روز رایگان",
+      image: "town-image",
+      icon: "apartment-icon.svg",
+      color: "blue-town ",
+    },
+  ];
 
   function resetTimeout() {
     if (timeoutRef.current) {
@@ -46,20 +112,24 @@ const Main = () => {
       </p>
       <div className="slideshow">
         <div
-          className="slideshowSlider"
+          className="slideshowSlider "
           style={{ transform: `translate3d(${index * 100}%, 0, 0)` }}
         >
-          {colors.map((backgroundColor, index) => (
-            <div
+          {carouselItems.map((card, index) => (
+            <CarouselCard
               className="slide"
+              title={card.title}
+              caption={card.caption}
+              image={card.image}
+              icon={card.icon}
+              color={card.color}
               key={index}
-              style={{ backgroundColor }}
-            ></div>
+            />
           ))}
         </div>
 
         <div className="slideshowDots">
-          {colors.map((_, idx) => (
+          {carouselItems.map((_, idx) => (
             <div
               key={idx}
               className={`slideshowDot${index === idx ? " active" : ""}`}
