@@ -5,7 +5,7 @@ const divideScale = 3;
 const delay = 100000;
 const itemsPerSlide = 4;
 
-const Carousel = ({ carouselItems }) => {
+const Carousel = ({ carouselItems, toolTipType }) => {
   const [index, setIndex] = useState(0);
   const timeoutRef = useRef(null);
 
@@ -42,39 +42,35 @@ const Carousel = ({ carouselItems }) => {
           style={{ transform: `translate3d(${index * 100}%, 0, 0)` }}
         >
           {carouselItems.map((card, index) => (
-            <Tooltip
-              tooltipStyle="tooltip visible"
-              tooltipTextStyle="tooltiptext bg-tooltip-gray text-tooltip-carousel top-80 right-1/3 carousel-after"
+            <CarouselCard
+              title={card.title}
+              caption={card.caption}
+              image={card.image}
+              icon={card.icon}
+              color={card.color}
+              scale={itemsPerSlide}
+              key={index}
               tooltipText={
-                <div class="grid grid-cols-3 grid-row-1 gap-4">
-                  <div class="col-span-2 relative">
-                    <h3>
-                      10 روز انتخاب این گزینه رایگان است انتخاب
-                      <br /> آپارتمان به مدت
-                    </h3>
-                    <button className="text-base text-white float-left bg-light-green rounded-3xl w-36 h-12 py-1 px-6 absolute  bottom-0 left-0">
-                      ادامه
-                    </button>
+                toolTipType === "org" ? (
+                  <div class="grid grid-cols-3 grid-row-1 gap-4">
+                    <div class="col-span-2 relative">
+                      <h3>{card.tooltipCaption}</h3>
+                      <button className="text-base text-white float-left bg-light-green rounded-3xl w-36 h-12 py-1 px-6 absolute  bottom-0 left-0">
+                        ادامه
+                      </button>
+                    </div>
+                    <div class="col-span-1 ...">
+                      <img
+                        src={process.env.PUBLIC_URL + card.image}
+                        className=" float-left w-28 "
+                      />
+                    </div>
                   </div>
-                  <div class="col-span-1 ...">
-                    <img
-                      src={process.env.PUBLIC_URL + "/apartment.png"}
-                      className=" float-left w-28 "
-                    />
-                  </div>
-                </div>
+                ) : (
+                  <div></div>
+                )
               }
-            >
-              <CarouselCard
-                title={card.title}
-                caption={card.caption}
-                image={card.image}
-                icon={card.icon}
-                color={card.color}
-                scale={itemsPerSlide}
-                key={index}
-              />
-            </Tooltip>
+            />
           ))}
         </div>
 
