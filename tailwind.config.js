@@ -11,8 +11,9 @@ module.exports = {
       "tooltip-green": "#CDD500",
       "tooltip-gray": "#E5E5E5",
       "light-green": "#00D896",
-
       "dark-red": "#B02D53",
+      silver :"#c4c4c4",
+      "purple" : "#6a0dad"
     }),
     borderWidth: {
       3: "3px",

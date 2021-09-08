@@ -152,11 +152,39 @@ ul.breadcrumb li a:hover {
   color: #595959;
   text-decoration: underline;
 }
+/* header */
+.header-container {
+  @apply flex;
+}
+
+.atrometer-logo {
+  @apply flex-1 m-auto;
+}
+
+.atrometer-logo img {
+  @apply m-auto mr-28;
+}
+
+.atrometer-logo p {
+  @apply font-extrabold text-xl mr-28;
+}
+
+.atrometer-image {
+  @apply flex-1 m-auto mt-12 mr-5;
+}
+
+.breadCrumb-container {
+  @apply mr-28;
+}
+
+.stage-title {
+  @apply font-extrabold mr-28 text-xl mt-4;
+}
 /*carousel*/
 ul.carousel {
-  @apply mr-28 my-4;
-  display: flex;
-  flex-wrap: wrap;
+  @apply mr-28 my-4 flex flex-wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 ul.carousel li {
   @apply my-4;
@@ -181,24 +209,30 @@ ul.carousel li {
 .card-body button {
   @apply bg-dark-red hover:bg-red-800  rounded-3xl w-36 h-12 py-1 px-6 text-base text-white mt-16 flex-1 m-auto;
 }
+/*carousel card*/
+.card-title {
+  @apply font-extrabold text-xl;
+}
+
+.card-caption {
+  @apply font-light text-5xl;
+}
+
 /* Slideshow */
 
 .slideshow {
-  /* margin: auto; */
-  overflow: hidden;
-  margin-right: 80px;
-  padding-bottom: 500px;
-  /* max-width: 500px; */
+@apply overflow-hidden mr-20 pb-96;
+
 }
 
 .slideshowSlider {
-  white-space: nowrap;
+  @apply whitespace-nowrap mt-24;
   transition: ease 1000ms;
-  margin-top: 6.25rem;
+  /* margin-top: 6.25rem; */
 }
 
 .slide {
-  display: inline-block;
+  @apply inline-block;
 
   /* height: 400px; */
   /* width: 100%; */
@@ -208,21 +242,15 @@ ul.carousel li {
 /* Buttons */
 
 .slideshowDots {
-  text-align: center;
+  @apply text-center;
+
 }
 
 .slideshowDot {
-  display: inline-block;
-  height: 20px;
-  width: 20px;
+  @apply inline-block h-5 w-5 cursor-pointer bg-silver mt-4 mx-2;
   border-radius: 50%;
-
-  cursor: pointer;
-  margin: 15px 7px 0px;
-
-  background-color: #c4c4c4;
 }
 
 .slideshowDot.active {
-  background-color: #6a0dad;
+  @apply bg-purple;
 }

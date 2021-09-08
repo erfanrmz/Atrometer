@@ -3,20 +3,19 @@ import { FaBars } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <div className="flex ">
-      <div className="flex-1 m-auto ">
-        <div className="">
+    <div className="header-container">
+      <div className="atrometer-logo">
+        <div>
           <img
             src={process.env.PUBLIC_URL + "/atrometerLogo.svg"}
-            alt=""
-            className="m-auto mr-28 "
+            alt="Atrometer logo"
           />
-          <p className="font-extrabold text-xl  mr-28 ">
+          <p>
             سامانه هوشمند قرائت <span className="text-orange">آب،برق،گاز</span>
           </p>
         </div>
       </div>
-      <div className="flex-1 m-auto mt-12 mr-5">
+      <div className="atormeter-image">
         <FaBars className=" bars " />
         <img src={process.env.PUBLIC_URL + "/organization.svg"} alt="" />
       </div>

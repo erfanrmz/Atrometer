@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 const Tooltip = ({ tooltipStyle, tooltipTextStyle, tooltipText, children }) => {
-  console.log(children);
+  // console.log(children);
   return (
     <div className={tooltipStyle}>
       {children}

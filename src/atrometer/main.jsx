@@ -100,7 +100,7 @@ const Main = () => {
 
   return (
     <React.Fragment>
-      <nav className="mr-28">
+      <nav className="breadCrumb-container">
         <ul class="breadcrumb">
           <li>
             <a href="#">راهکارها</a>
@@ -111,9 +111,7 @@ const Main = () => {
         </ul>
       </nav>
 
-      <p className="font-extrabold mr-28 text-xl mt-4">
-        مرحله انتخاب ابعاد سازمانی
-      </p>
+      <p className="stage-title">مرحله انتخاب ابعاد سازمانی</p>
       <div className="slideshow">
         <div
           className="slideshowSlider "
@@ -121,7 +119,7 @@ const Main = () => {
         >
           {carouselItems.map((card, index) => (
             <Tooltip
-              tooltipStyle="tooltip  visible"
+              tooltipStyle="tooltip visible"
               tooltipTextStyle="tooltiptext bg-tooltip-gray text-tooltip-carousel -bottom-96 right-1/3 carousel-after"
               tooltipText={
                 <div>
