@@ -61,8 +61,8 @@ const Carousel = ({ carouselItems, toolTipType }) => {
                     </div>
                     <div class="col-span-1 ...">
                       <img
-                        src={process.env.PUBLIC_URL + card.image}
-                        className=" float-left w-28 "
+                        src={process.env.PUBLIC_URL + card.image + ".png"}
+                        className=" float-left w-32 h-32 rounded-3xl"
                       />
                     </div>
                   </div>

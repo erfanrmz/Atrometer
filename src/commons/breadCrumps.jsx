@@ -16,7 +16,7 @@ const BreadCrumps = ({ current }) => {
   ];
 
   const renderColor = (index) => {
-    console.log(index, current);
+    
     if (index === current) return "black";
   };
 
