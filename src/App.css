@@ -170,6 +170,10 @@ ul.breadcrumb li a:hover {
   @apply font-extrabold text-xl mr-28;
 }
 
+.atrometer-logo span {
+  @apply text-orange;
+}
+
 .atrometer-image {
   @apply flex-1 m-auto mt-12 mr-5;
 }

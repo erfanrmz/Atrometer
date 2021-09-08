@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import BreadCrumps from "../commons/breadCrumps";
 import CarouselCard from "../commons/carouselCard";
 import Tooltip from "../commons/tooltip";
 const divideScale = 3;
@@ -100,18 +101,9 @@ const Main = () => {
 
   return (
     <React.Fragment>
-      <nav className="breadCrumb-container">
-        <ul class="breadcrumb">
-          <li>
-            <a href="#">راهکارها</a>
-          </li>
-          <li>
-            <a href="#">انتخاب ابعاد سازمانی</a>
-          </li>
-        </ul>
-      </nav>
+      <BreadCrumps current={1} />
 
-      <p className="stage-title">مرحله انتخاب ابعاد سازمانی</p>
+      
       <div className="slideshow">
         <div
           className="slideshowSlider "

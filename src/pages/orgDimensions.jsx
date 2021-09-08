@@ -7,7 +7,7 @@ const OrgDimensions = () => {
   return (
     <React.Fragment>
       <NavBar color="orange" />
-      <Header />
+      <Header imageUrl = "/organization.svg" label = "organization" />
       <Main />
     </React.Fragment>
   );
