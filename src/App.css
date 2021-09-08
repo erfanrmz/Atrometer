@@ -104,7 +104,8 @@
 }
 
 .tooltip .tooltiptext::after {
-  @apply absolute top-1/2 border-solid;
+  @apply absolute border-solid;
+  top: 32%;
   content: "";
 }
 
@@ -221,8 +222,7 @@ ul.carousel li {
 /* Slideshow */
 
 .slideshow {
-@apply overflow-hidden mr-20 pb-96;
-
+  @apply overflow-hidden mr-20 pb-96;
 }
 
 .slideshowSlider {
@@ -243,7 +243,6 @@ ul.carousel li {
 
 .slideshowDots {
   @apply text-center;
-
 }
 
 .slideshowDot {

@@ -120,26 +120,24 @@ const Main = () => {
           {carouselItems.map((card, index) => (
             <Tooltip
               tooltipStyle="tooltip visible"
-              tooltipTextStyle="tooltiptext bg-tooltip-gray text-tooltip-carousel -bottom-96 right-1/3 carousel-after"
+              tooltipTextStyle="tooltiptext bg-tooltip-gray text-tooltip-carousel top-80 right-1/3 carousel-after"
               tooltipText={
-                <div>
-                  <div className="flex">
-                    <div className="flex-1">
-                      <p>
-                        10 روز انتخاب این گزینه رایگان
-                        <br /> است انتخاب آپارتمان به مدت
-                      </p>
-                    </div>
-                    <div className="flex-1">
-                      <img
-                        src={process.env.PUBLIC_URL + "/apartment.png"}
-                        className="w-24 h-24 float-left"
-                      />
-                    </div>
+                <div class="grid grid-cols-3 grid-row-1 gap-4">
+                  <div class="col-span-2 relative">
+                    <h3>
+                      10 روز انتخاب این گزینه رایگان است انتخاب
+                      <br /> آپارتمان به مدت
+                    </h3>
+                    <button className="text-base text-white float-left bg-light-green rounded-3xl w-36 h-12 py-1 px-6 absolute  bottom-0 left-0">
+                      ادامه
+                    </button>
                   </div>
-                  <button className="text-base text-white float-left bg-light-green rounded-3xl w-36 h-12 py-1 px-6">
-                    ادامه
-                  </button>
+                  <div class="col-span-1 ...">
+                    <img
+                      src={process.env.PUBLIC_URL + "/apartment.png"}
+                      className=" float-left w-28 "
+                    />
+                  </div>
                 </div>
               }
             >
