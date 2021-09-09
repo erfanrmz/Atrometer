@@ -54,7 +54,9 @@ const Carousel = ({ carouselItems, toolTipType }) => {
                 toolTipType === "org" ? (
                   <div class="grid grid-cols-3 grid-row-1 gap-4">
                     <div class="col-span-2 relative">
-                      <h3>{card.tooltipCaption}</h3>
+                      <h3 className="whitespace-pre-line">
+                        {card.tooltipCaption}
+                      </h3>
                       <button className="text-base text-white float-left bg-light-green rounded-3xl w-36 h-12 py-1 px-6 absolute  bottom-0 left-0">
                         ادامه
                       </button>
@@ -62,7 +64,7 @@ const Carousel = ({ carouselItems, toolTipType }) => {
                     <div class="col-span-1 ...">
                       <img
                         src={process.env.PUBLIC_URL + card.image + ".png"}
-                        className=" float-left w-32 h-32 rounded-3xl"
+                        className=" object-cover float-left w-32 h-32 rounded-3xl"
                       />
                     </div>
                   </div>
