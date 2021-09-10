@@ -5,7 +5,12 @@ const divideScale = 3;
 const delay = 100000;
 const itemsPerSlide = 4;
 
-const Carousel = ({ carouselItems, toolTipType }) => {
+const Carousel = ({
+  carouselItems,
+  toolTipType,
+  textColor,
+  showChooseButton,
+}) => {
   const [index, setIndex] = useState(0);
   const timeoutRef = useRef(null);
 
@@ -50,6 +55,8 @@ const Carousel = ({ carouselItems, toolTipType }) => {
               color={card.color}
               scale={itemsPerSlide}
               key={index}
+              textColor={textColor}
+              showButton={showChooseButton}
               tooltipText={
                 toolTipType === "org" ? (
                   <div class="grid grid-cols-3 grid-row-1 gap-4">

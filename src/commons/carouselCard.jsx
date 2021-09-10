@@ -9,12 +9,16 @@ const CarouselCard = ({
   color,
   scale,
   tooltipText,
+  textColor,
+  showButton,
 }) => {
   const cardClass = " slide card bg-" + image;
   const cardFilterClass =
     "card-filter from-" + color + " to-" + color + "-fade";
   const width = 100 / scale + "%";
-  // console.log(width);
+  const cardTitleClass = "card-title " + { textColor };
+  const cardCaptionClass = "card-caption " + { textColor };
+  console.log(textColor);
   return (
     <Tooltip
       tooltipStyle="tooltip visible"
@@ -25,10 +29,14 @@ const CarouselCard = ({
         <div className={cardFilterClass}>
           <div className="card-body">
             <img src={process.env.PUBLIC_URL + "/" + icon} alt={icon} />
-            <p className="card-title">{title}</p>
-            <p className="card-caption">{caption}</p>
+            <p className="card-title" style={{ color: textColor }}>
+              {title}
+            </p>
+            <p className="card-caption" style={{ color: textColor }}>
+              {caption}
+            </p>
 
-            <button>انتخاب</button>
+            {showButton && <button>انتخاب</button>}
           </div>
         </div>
       </div>

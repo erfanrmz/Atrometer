@@ -3,84 +3,84 @@ import Header from "../atrometer/header";
 import Main from "../atrometer/main";
 import NavBar from "../commons/navbar";
 
-const OrgDimensions = () => {
-  const toolTipType = "org";
+const License = () => {
+  const toolTipType = "license";
   const carouselItems = [
     {
-      title: "آپارتمان",
-      caption: "10 روز رایگان",
-      image: "apartment-image",
-      icon: "apartment-icon.svg",
-      color: "green-apartment",
+      title: "10 روز",
+      caption: "رایگان",
+      image: "",
+      icon: "free-icon.svg",
+      color: "white",
       tooltipCaption:
         " 10 روز انتخاب این گزینه رایگان است انتخاب  آپارتمان به مدت",
     },
 
     {
-      title: "برج",
+      title: "1 ماهه",
       caption: "200 هزار تومان",
-      image: "tower-image",
-      icon: "apartment-icon.svg",
-      color: "blue-tower",
+      image: "",
+      icon: "dollar-sign-icon.svg",
+      color: "white",
       tooltipCaption:
         " 10 روز انتخاب این گزینه رایگان است انتخاب  آپارتمان به مدت",
     },
 
     {
-      title: "مجتمع",
-      caption: "10 روز رایگان",
-      image: "complex-image",
-      icon: "apartment-icon.svg",
-      color: "red-complex ",
+      title: "2 ماهه",
+      caption: "562 هزار تومان",
+      image: "",
+      icon: "dollar-coin-icon.svg",
+      color: "white",
       tooltipCaption:
         " 10 روز انتخاب این گزینه رایگان است انتخاب  آپارتمان به مدت",
     },
 
     {
-      title: "شهرک",
-      caption: "10 روز رایگان",
-      image: "town-image",
-      icon: "apartment-icon.svg",
-      color: "blue-town",
+      title: "3 ماهه",
+      caption: "300 هزار تومان",
+      image: "",
+      icon: "coin-icon.svg",
+      color: "white",
       tooltipCaption:
         " 10 روز انتخاب این گزینه رایگان است انتخاب  آپارتمان به مدت",
     },
     {
-      title: "آپارتمان",
-      caption: "10 روز رایگان",
-      image: "apartment-image",
-      icon: "apartment-icon.svg",
-      color: "green-apartment",
+      title: "10 روز",
+      caption: "رایگان",
+      image: "",
+      icon: "free-icon.svg",
+      color: "white",
       tooltipCaption:
         " 10 روز انتخاب این گزینه رایگان است انتخاب  آپارتمان به مدت",
     },
 
     {
-      title: "برج",
+      title: "1 ماهه",
       caption: "200 هزار تومان",
-      image: "tower-image",
-      icon: "apartment-icon.svg",
-      color: "blue-tower",
+      image: "",
+      icon: "dollar-sign-icon.svg",
+      color: "white",
       tooltipCaption:
         " 10 روز انتخاب این گزینه رایگان است انتخاب  آپارتمان به مدت",
     },
 
     {
-      title: "مجتمع",
-      caption: "10 روز رایگان",
-      image: "complex-image",
-      icon: "apartment-icon.svg",
-      color: "red-complex ",
+      title: "2 ماهه",
+      caption: "562 هزار تومان",
+      image: "",
+      icon: "dollar-coin-icon.svg",
+      color: "white",
       tooltipCaption:
         " 10 روز انتخاب این گزینه رایگان است انتخاب  آپارتمان به مدت",
     },
 
     {
-      title: "شهرک",
-      caption: "10 روز رایگان",
-      image: "town-image",
-      icon: "apartment-icon.svg",
-      color: "blue-town",
+      title: "3 ماهه",
+      caption: "300 هزار تومان",
+      image: "",
+      icon: "coin-icon.svg",
+      color: "white",
       tooltipCaption:
         " 10 روز انتخاب این گزینه رایگان است انتخاب  آپارتمان به مدت",
     },
@@ -93,9 +93,12 @@ const OrgDimensions = () => {
         toolTipType={toolTipType}
         carouselItems={carouselItems}
         current={3}
+        color="bg-light-gray"
+        cardTextColor="black"
+        showCarouselChooseButton={false}
       />
     </React.Fragment>
   );
 };
 
-export default OrgDimensions;
+export default License;

@@ -209,7 +209,7 @@ ul.carousel li {
   @apply w-12 h-12 flex-1 mx-auto mt-12;
 }
 .card-body p {
-  @apply text-white flex-1 mt-1  text-center;
+  @apply flex-1 mt-1 text-center;
 }
 .card-body button {
   @apply bg-dark-red hover:bg-red-800  rounded-3xl w-36 h-12 py-1 px-6 text-base text-white mt-16 flex-1 m-auto;

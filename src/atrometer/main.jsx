@@ -2,12 +2,24 @@ import React, { useEffect, useState, useRef } from "react";
 import BreadCrumps from "../commons/breadCrumps";
 import Carousel from "../commons/carousel";
 
-const Main = ({ toolTipType, carouselItems, current }) => {
+const Main = ({
+  toolTipType,
+  carouselItems,
+  current,
+  color,
+  cardTextColor,
+  showCarouselChooseButton,
+}) => {
   return (
-    <React.Fragment>
+    <div className={color}>
       <BreadCrumps current={current} />
-      <Carousel carouselItems={carouselItems} toolTipType={toolTipType} />
-    </React.Fragment>
+      <Carousel
+        carouselItems={carouselItems}
+        toolTipType={toolTipType}
+        textColor={cardTextColor}
+        showChooseButton={showCarouselChooseButton}
+      />
+    </div>
   );
 };
 
