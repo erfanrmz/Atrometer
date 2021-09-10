@@ -88,7 +88,11 @@ const License = () => {
   return (
     <React.Fragment>
       <NavBar color="orange" />
-      <Header imageUrl="/license.svg" label="license" />
+      <Header
+        imageUrl="/license.svg"
+        label="license"
+        headerImageStyles="my-20"
+      />
       <Main
         toolTipType={toolTipType}
         carouselItems={carouselItems}
