@@ -12,8 +12,7 @@ const License = () => {
       image: "",
       icon: "free-icon.svg",
       color: "white",
-      tooltipCaption:
-        " 10 روز انتخاب این گزینه رایگان است انتخاب  آپارتمان به مدت",
+      tooltipCaption: " این گزینه رایگان است به مدت 10 روز",
     },
 
     {
@@ -22,8 +21,7 @@ const License = () => {
       image: "",
       icon: "dollar-sign-icon.svg",
       color: "white",
-      tooltipCaption:
-        " 10 روز انتخاب این گزینه رایگان است انتخاب  آپارتمان به مدت",
+      tooltipCaption: " این گزینه رایگان است به مدت 10 روز",
     },
 
     {
@@ -32,18 +30,16 @@ const License = () => {
       image: "",
       icon: "dollar-coin-icon.svg",
       color: "white",
-      tooltipCaption:
-        " 10 روز انتخاب این گزینه رایگان است انتخاب  آپارتمان به مدت",
+      tooltipCaption: " این گزینه رایگان است به مدت 10 روز",
     },
 
     {
       title: "3 ماهه",
       caption: "300 هزار تومان",
       image: "",
-      icon: "coin-icon.svg",
+      icon: "dollar-coin-icon.svg",
       color: "white",
-      tooltipCaption:
-        " 10 روز انتخاب این گزینه رایگان است انتخاب  آپارتمان به مدت",
+      tooltipCaption: " این گزینه رایگان است به مدت 10 روز",
     },
     {
       title: "10 روز",
@@ -51,8 +47,7 @@ const License = () => {
       image: "",
       icon: "free-icon.svg",
       color: "white",
-      tooltipCaption:
-        " 10 روز انتخاب این گزینه رایگان است انتخاب  آپارتمان به مدت",
+      tooltipCaption: " این گزینه رایگان است به مدت 10 روز",
     },
 
     {
@@ -61,8 +56,7 @@ const License = () => {
       image: "",
       icon: "dollar-sign-icon.svg",
       color: "white",
-      tooltipCaption:
-        " 10 روز انتخاب این گزینه رایگان است انتخاب  آپارتمان به مدت",
+      tooltipCaption: " این گزینه رایگان است به مدت 10 روز",
     },
 
     {
@@ -71,18 +65,16 @@ const License = () => {
       image: "",
       icon: "dollar-coin-icon.svg",
       color: "white",
-      tooltipCaption:
-        " 10 روز انتخاب این گزینه رایگان است انتخاب  آپارتمان به مدت",
+      tooltipCaption: " این گزینه رایگان است به مدت 10 روز",
     },
 
     {
       title: "3 ماهه",
       caption: "300 هزار تومان",
       image: "",
-      icon: "coin-icon.svg",
+      icon: "dollar-coin-icon.svg",
       color: "white",
-      tooltipCaption:
-        " 10 روز انتخاب این گزینه رایگان است انتخاب  آپارتمان به مدت",
+      tooltipCaption: " این گزینه رایگان است به مدت 10 روز",
     },
   ];
   return (
@@ -99,7 +91,8 @@ const License = () => {
         current={3}
         color="bg-light-gray"
         cardTextColor="black"
-        showCarouselChooseButton={false}
+        buttonColor="#00D896"
+        showCarouselChooseButton={true}
       />
     </React.Fragment>
   );

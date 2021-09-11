@@ -8,6 +8,7 @@ const Main = ({
   current,
   color,
   cardTextColor,
+  buttonColor,
   showCarouselChooseButton,
 }) => {
   return (
@@ -17,6 +18,7 @@ const Main = ({
         carouselItems={carouselItems}
         toolTipType={toolTipType}
         textColor={cardTextColor}
+        buttonColor={buttonColor}
         showChooseButton={showCarouselChooseButton}
       />
     </div>

@@ -10,6 +10,7 @@ const CarouselCard = ({
   scale,
   tooltipText,
   textColor,
+  buttonColor,
   showButton,
 }) => {
   const cardClass = " slide card bg-" + image;
@@ -22,7 +23,7 @@ const CarouselCard = ({
   return (
     <Tooltip
       tooltipStyle="tooltip visible"
-      tooltipTextStyle="tooltiptext bg-tooltip-gray text-tooltip-carousel top-80 right-1/3 carousel-after"
+      tooltipTextStyle="tooltiptext bg-blue-tooltip text-tooltip-carousel top-80 right-1/3 carousel-after"
       tooltipText={tooltipText}
     >
       <div className={cardClass} style={{ width }}>
@@ -36,7 +37,9 @@ const CarouselCard = ({
               {caption}
             </p>
 
-            {showButton && <button>انتخاب</button>}
+            {showButton && (
+              <button style={{ backgroundColor: buttonColor }}>انتخاب</button>
+            )}
           </div>
         </div>
       </div>

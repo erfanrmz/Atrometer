@@ -15,8 +15,7 @@ module.exports = {
       silver: "#c4c4c4",
       purple: "#6a0dad",
       "light-gray": "#F4F5F8",
-      
-
+      "blue-tooltip": "#3210BC",
     }),
     borderWidth: {
       3: "3px",
@@ -50,7 +49,7 @@ module.exports = {
       "red-complex-fade": "rgba(239, 232, 241, 0.64)",
       "blue-town": "#2582C0",
       "blue-town-fade": "rgba(161, 213, 229, 0.66)",
-      "white": "#FFFFFF",
+      white: "#FFFFFF",
       "white-fade": "#FFFFFF",
     }),
     extend: {

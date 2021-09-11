@@ -9,6 +9,7 @@ const Carousel = ({
   carouselItems,
   toolTipType,
   textColor,
+  buttonColor,
   showChooseButton,
 }) => {
   const [index, setIndex] = useState(0);
@@ -56,6 +57,7 @@ const Carousel = ({
               scale={itemsPerSlide}
               key={index}
               textColor={textColor}
+              buttonColor={buttonColor}
               showButton={showChooseButton}
               tooltipText={
                 toolTipType === "org" ? (
@@ -76,7 +78,40 @@ const Carousel = ({
                     </div>
                   </div>
                 ) : (
-                  <div></div>
+                  <div class="grid grid-cols-5 grid-row-1 gap-4">
+                    <div class="col-span-1 relative">
+                      <h3 className="whitespace-pre-line text-white text-center">
+                        {card.tooltipCaption}
+                      </h3>
+                    </div>
+                    <div class="col-span-1">
+                      <p className="whitespace-pre-line text-white text-center text-5xl">
+                        تقریب 1 ماهه
+                      </p>
+                      <p className="whitespace-pre-line text-white text-center">
+                        بدون احتساب مالیات
+                      </p>
+                    </div>
+                    <div class="col-span-1">
+                      <p className="whitespace-pre-line text-white text-center text-5xl">
+                        تقریب 1 ماهه
+                      </p>
+                      <p className="whitespace-pre-line text-white text-center">
+                        بدون احتساب مالیات
+                      </p>
+                    </div>
+
+                    <div class="col-span-1 self-center">
+                      <p className="whitespace-pre-line text-white text-center text-5xl">
+                        200 هزار تومان
+                      </p>
+                    </div>
+                    <div class="col-span-1 ">
+                      <button className="text-base text-white float-left bg-orange rounded-3xl w-36 h-12 py-1 px-6 absolute  bottom-0 left-0 align-middle">
+                        خرید
+                      </button>
+                    </div>
+                  </div>
                 )
               }
             />
