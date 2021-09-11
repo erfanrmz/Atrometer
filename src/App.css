@@ -112,9 +112,8 @@
 /* tooltip of carousel Cards */
 
 .carousel-after::after {
-  bottom: 100%;
+  @apply bottom-full transform rotate-90;
   right: 10%;
-  transform: rotate(90deg);
   margin-top: -15%;
   border-width: 16px;
   border-color: transparent #e5e5e5 transparent transparent;
@@ -127,7 +126,7 @@
 }
 
 .tooltip:hover .tooltiptext {
-  visibility: visible;
+  @apply visible;
 }
 
 .bars {
@@ -135,15 +134,13 @@
 }
 
 ul.breadcrumb {
-  list-style: none;
+  @apply list-none;
 }
 ul.breadcrumb li {
-  display: inline;
-  font-size: 30px;
+  @apply inline text-5xl;
 }
 ul.breadcrumb li + li:before {
-  padding: 8px;
-  color: black;
+  @apply p-2 text-black;
   content: ">";
 }
 ul.breadcrumb li a {
@@ -151,8 +148,8 @@ ul.breadcrumb li a {
   text-decoration: none;
 }
 ul.breadcrumb li a:hover {
+  @apply underline;
   color: #595959;
-  text-decoration: underline;
 }
 /* header */
 .header-container {

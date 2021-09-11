@@ -25,7 +25,7 @@ const BreadCrumps = ({ current }) => {
 
   return (
     <React.Fragment>
-      <nav className="breadCrumb-container">
+      <nav className="breadCrumb-container pt-8">
         <ul class="breadcrumb">
           {paths.map((item, index) => {
             if (index <= current) {
