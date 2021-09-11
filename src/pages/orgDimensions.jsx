@@ -95,6 +95,7 @@ const OrgDimensions = () => {
         current={1}
         cardTextColor="white"
         showCarouselChooseButton={true}
+        tooltipColor="tooltip-gray"
       />
     </React.Fragment>
   );

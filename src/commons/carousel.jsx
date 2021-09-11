@@ -11,6 +11,7 @@ const Carousel = ({
   textColor,
   buttonColor,
   showChooseButton,
+  tooltipColor,
 }) => {
   const [index, setIndex] = useState(0);
   const timeoutRef = useRef(null);
@@ -59,9 +60,10 @@ const Carousel = ({
               textColor={textColor}
               buttonColor={buttonColor}
               showButton={showChooseButton}
+              tooltipColor={tooltipColor}
               tooltipText={
                 toolTipType === "org" ? (
-                  <div class="grid grid-cols-3 grid-row-1 gap-4">
+                  <div class="grid grid-cols-3 grid-row-1 gap-4 ">
                     <div class="col-span-2 relative">
                       <h3 className="whitespace-pre-line">
                         {card.tooltipCaption}
@@ -78,13 +80,13 @@ const Carousel = ({
                     </div>
                   </div>
                 ) : (
-                  <div class="grid grid-cols-5 grid-row-1 gap-4">
-                    <div class="col-span-1 relative">
+                  <div class="grid grid-cols-5 grid-row-1 gap-4 m-auto">
+                    <div class="col-span-1 m-auto">
                       <h3 className="whitespace-pre-line text-white text-center">
                         {card.tooltipCaption}
                       </h3>
                     </div>
-                    <div class="col-span-1">
+                    <div class="col-span-1 m-auto">
                       <p className="whitespace-pre-line text-white text-center text-5xl">
                         تقریب 1 ماهه
                       </p>
@@ -92,7 +94,7 @@ const Carousel = ({
                         بدون احتساب مالیات
                       </p>
                     </div>
-                    <div class="col-span-1">
+                    <div class="col-span-1 m-auto">
                       <p className="whitespace-pre-line text-white text-center text-5xl">
                         تقریب 1 ماهه
                       </p>
@@ -101,13 +103,13 @@ const Carousel = ({
                       </p>
                     </div>
 
-                    <div class="col-span-1 self-center">
+                    <div class="col-span-1 m-auto">
                       <p className="whitespace-pre-line text-white text-center text-5xl">
                         200 هزار تومان
                       </p>
                     </div>
-                    <div class="col-span-1 ">
-                      <button className="text-base text-white float-left bg-orange rounded-3xl w-36 h-12 py-1 px-6 absolute  bottom-0 left-0 align-middle">
+                    <div class="col-span-1 m-auto">
+                      <button className=" text-base text-white float-left bg-orange rounded-3xl w-36 h-12 py-1 px-6   bottom-0 left-0 align-middle">
                         خرید
                       </button>
                     </div>

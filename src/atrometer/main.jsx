@@ -10,6 +10,7 @@ const Main = ({
   cardTextColor,
   buttonColor,
   showCarouselChooseButton,
+  tooltipColor,
 }) => {
   return (
     <div className={color}>
@@ -20,6 +21,7 @@ const Main = ({
         textColor={cardTextColor}
         buttonColor={buttonColor}
         showChooseButton={showCarouselChooseButton}
+        tooltipColor={tooltipColor}
       />
     </div>
   );

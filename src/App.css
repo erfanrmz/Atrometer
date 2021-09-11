@@ -105,13 +105,14 @@
 
 .tooltip .tooltiptext::after {
   @apply absolute border-solid;
-  top: 32%;
+  /* top: 0%; */
   content: "";
 }
 
 /* tooltip of carousel Cards */
 
 .carousel-after::after {
+  bottom: 100%;
   right: 10%;
   transform: rotate(90deg);
   margin-top: -15%;

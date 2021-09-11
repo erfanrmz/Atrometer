@@ -93,6 +93,7 @@ const License = () => {
         cardTextColor="black"
         buttonColor="#00D896"
         showCarouselChooseButton={true}
+        tooltipColor="blue-tooltip"
       />
     </React.Fragment>
   );
