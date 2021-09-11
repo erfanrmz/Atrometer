@@ -14,6 +14,7 @@ const Header = () => {
       tooltipText:
         "قرائت از مرحله ی انتخاب قرایت سازمانی برق بر اساس استانداردIEC6205621 قابل اطلاعات قابل قرائت از کنتور های",
       style: "",
+      endPoint: "/orgDimensions",
     },
     {
       label: "ناوگون",
@@ -21,6 +22,7 @@ const Header = () => {
       tooltipText:
         "قرائت از مرحله ی انتخاب قرایت سازمانی برق بر اساس استانداردIEC6205621 قابل اطلاعات قابل قرائت از کنتور های",
       style: "w-4/5",
+      endPoint: "#",
     },
     {
       label: "آتروسل",
@@ -28,6 +30,7 @@ const Header = () => {
       tooltipText:
         "قرائت از مرحله ی انتخاب قرایت سازمانی برق بر اساس استانداردIEC6205621 قابل اطلاعات قابل قرائت از کنتور های",
       style: "",
+      endPoint: "#",
     },
   ];
   let solutionsStyle = !select
@@ -65,6 +68,7 @@ const Header = () => {
                 tooltipStyle={tooltipStyle}
                 solutionsStyle={solutionsStyle}
                 imageStyle={solution.style}
+                endPoint={solution.endPoint}
               />
             ))}
 

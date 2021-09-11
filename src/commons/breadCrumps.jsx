@@ -3,15 +3,19 @@ const BreadCrumps = ({ current }) => {
   const paths = [
     {
       title: "راهکارها",
+      endPoint: "/solutions",
     },
     {
       title: "انتخاب ابعاد سازمانی",
+      endPoint: "/orgDimensions",
     },
     {
       title: " انتخاب کنترهای آب و برق و گاز",
+      endPoint: "#",
     },
     {
       title: "مدت زمان خرید لایسنس",
+      endPoint: "/license",
     },
   ];
 
@@ -31,7 +35,7 @@ const BreadCrumps = ({ current }) => {
                     style={{
                       color: renderColor(index),
                     }}
-                    href="#"
+                    href={item.endPoint}
                   >
                     {item.title}
                   </a>

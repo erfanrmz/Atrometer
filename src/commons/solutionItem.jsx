@@ -8,6 +8,7 @@ const SolutionItem = ({
   tooltipTextStyle,
   solutionsStyle,
   imageStyle,
+  endPoint,
 }) => {
   return (
     <Tooltip
@@ -15,9 +16,11 @@ const SolutionItem = ({
       tooltipStyle={tooltipStyle}
       tooltipTextStyle={tooltipTextStyle}
     >
-      <button className={solutionsStyle}>
-        <img src={imageUrl} alt={label} className={"m-auto " + imageStyle} />
-      </button>
+      <a href={endPoint}>
+        <button className={solutionsStyle}>
+          <img src={imageUrl} alt={label} className={"m-auto " + imageStyle} />
+        </button>
+      </a>
     </Tooltip>
   );
 };

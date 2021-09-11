@@ -35,7 +35,7 @@ const NavBar = (props) => {
     <nav className={navClass}>
       <ul className="nav-items">
         <li>
-          <a href="#" className="pb-4 mx-4 float-right nav-item">
+          <a href="/" className="pb-4 mx-4 float-right nav-item">
             <img
               className="max-h-12  inline border-white "
               src={process.env.PUBLIC_URL + "/atrovan_logo_crop.png"}
