@@ -11,6 +11,7 @@ const Main = ({
   buttonColor,
   showCarouselChooseButton,
   tooltipColor,
+  tooltipTextCols,
 }) => {
   return (
     <div className={color}>
@@ -22,6 +23,7 @@ const Main = ({
         buttonColor={buttonColor}
         showChooseButton={showCarouselChooseButton}
         tooltipColor={tooltipColor}
+        tooltipTextCols={tooltipTextCols}
       />
     </div>
   );

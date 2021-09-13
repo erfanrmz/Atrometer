@@ -99,7 +99,7 @@
 .tooltip .tooltiptext {
   @apply text-base font-normal p-4 invisible  text-right rounded-md absolute z-10;
   /* width: 26.625rem; */
-  width: 83rem;
+  /* width: 83rem; */
   left: 107%;
 }
 

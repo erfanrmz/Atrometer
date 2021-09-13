@@ -94,6 +94,7 @@ const License = () => {
         buttonColor="#00D896"
         showCarouselChooseButton={true}
         tooltipColor="blue-tooltip"
+        tooltipTextCols={5.5}
       />
     </React.Fragment>
   );

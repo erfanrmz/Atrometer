@@ -15,6 +15,7 @@ const SolutionItem = ({
       tooltipText={tooltipText}
       tooltipStyle={tooltipStyle}
       tooltipTextStyle={tooltipTextStyle}
+      textCols={2}
     >
       <a href={endPoint}>
         <button className={solutionsStyle}>

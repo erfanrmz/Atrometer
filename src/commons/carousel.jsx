@@ -12,6 +12,7 @@ const Carousel = ({
   buttonColor,
   showChooseButton,
   tooltipColor,
+  tooltipTextCols,
 }) => {
   const [index, setIndex] = useState(0);
   const timeoutRef = useRef(null);
@@ -61,6 +62,7 @@ const Carousel = ({
               buttonColor={buttonColor}
               showButton={showChooseButton}
               tooltipColor={tooltipColor}
+              tooltipTextCols={tooltipTextCols}
               tooltipText={
                 toolTipType === "org" ? (
                   <div class="grid grid-cols-3 grid-row-1 gap-4 ">
